@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ضع بياناتك للتواصل</title>
+
+    <!-- fonts -->
+    <!--    <link rel="stylesheet" href="helpers/fontawesome-5.13.1/css/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../helpers/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- start header -->
+    <header class="main-header pc-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="brand my-2">
+                    <img src="../assets/images/logo.png" alt="">
+                </a>
+                <div class="actions">
+                    <a href="cart.html"><button class="btn btn-success">العودة الي السلة</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="main-header mobile-header">
+        <div class="container-fluid">
+            <div class="header-content">
+                <div class="mob-brand">
+                    <a href="/" class="brand">
+                        <img src="../assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="actions">
+                    <a href="cart.html"><button class="btn btn-success">العودة الي السلة</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 mb-5">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 form-input">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="اسمك الثلاثي" required>
+                                    <div class="invalid-feedback">
+                                        من فضلك قم بإدخال الاسم
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3 form-input">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="رقم هاتفك الخاص" required>
+                                    <div class="invalid-feedback">
+                                        من فضلك قم بإدخال الهاتف
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-input">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="رقم احتياطي">
+                        </div>
+                        <!-- test button to continue web pages flow -->
+                        <a href="purchase-complete.html">
+                            <button style="width: 100%;" class="btn continue btn-success mt-3" type="button">الاستمرار</button>
+                        </a>
+                        <!-- form submit -->
+                        <!-- <button style="width: 100%;" class="btn btn-outline-success" type="submit">إرسال</button> -->
+                    </form>
+                </div>
+                <div class="col-12 col-md-5 mb-5">
+                    <div class="d-none d-md-block card text-dark bg-light mb-3">
+                        <div class="card-body">
+                            <div class="card-item">
+                                <div class="card-image">
+                                    <span class="badge rounded-pill bg-success">1</span>
+                                    <img src="../assets/images/product/1.jpeg" alt="product">
+                                </div>
+                                <a href="contact.html">مصباح الطاقة الشمسية على شكل كاميرا لمنع السرقة</a>
+                                <span>100ج.م</span>
+                            </div>
+                            <hr>
+                            <div class="card-item">
+                                <span href="contact.html">لائحة الأثمنة</span>
+                                <span>100ج.م</span>
+                            </div>
+                            <hr>
+                            <div class="card-item">
+                                <p>الثمن الإجمالي</p>
+                                <p class="green-text">100ج.م</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="mb-0 d-flex align-items-center">
+                                    <button class="btn btn-link btn-block text-right collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                        ملخص الطلبية
+                                    </button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-item">
+                                        <div class="card-image">
+                                            <span class="badge rounded-pill bg-success">1</span>
+                                            <img src="../assets/images/product/1.jpeg" alt="product">
+                                        </div>
+                                        <a href="contact.html">مصباح الطاقة الشمسية على شكل كاميرا لمنع السرقة</a>
+                                        <span>100ج.م</span>
+                                    </div>
+                                    <hr>
+                                    <div class="card-item">
+                                        <span href="contact.html">لائحة الأثمنة</span>
+                                        <span>100ج.م</span>
+                                    </div>
+                                    <hr>
+                                    <div class="card-item">
+                                        <p>الثمن الإجمالي</p>
+                                        <p class="green-text">100ج.م</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start footer -->
+    <footer>
+        <div class="footer-brand">
+            <a href="/">
+                <img src="../assets/images/logo.png" alt="">
+            </a>
+        </div>
+    <div class="container">
+        <div class="footer-body">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-item">
+                        <h3>عن المتجر</h3>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="about.html">عن المتجر</a></li>
+                            <li><a href="payment.html">طرق الدفع</a></li>
+                            <li><a href="delivery.html">الشحن والتسليم</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-item">
+                        <h3> الشروط والسياسات</h3>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="terms.html">سياسة الاستخدام </a></li>
+                            <li><a href="return-policy.html">سياسة الاستبدال والاسترجاع </a></li>
+                            <li><a href="privacy.html"> سياسة الخصوصية</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-item">
+                        <h3>اتصل بنا</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="contact.html">اتصل بنا </a></li>
+                            <li><a href="faq.html"> الاسئلة المتكررة </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!--end footer-->
+
+<script src="../helpers/js/jquery-3.4.1.min.js"></script>
+<script src="../helpers/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+<script>
+function openNav() {
+    // if(screen.width < '640px') {
+    document.querySelector(".sidenav").style.width = "320px";
+    closeOpenSideMenu()
+}
+
+function closeNav() {
+    document.querySelector(".sidenav").style.width = "0";
+}
+function openSideMenu() {
+    document.querySelector(".right-side-nav").style.width = "320px";
+    closeNav();
+}
+
+function closeOpenSideMenu() {
+    document.querySelector(".right-side-nav").style.width = "0";
+}
+
+
+</script>
+
+</body>

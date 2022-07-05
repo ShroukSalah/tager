@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>عرض المنتج</title>
+
+    <!-- fonts -->
+    <!--    <link rel="stylesheet" href="helpers/fontawesome-5.13.1/css/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../helpers/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- gallery -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--flash meg-->
+<div class="flash-msg text-center">
+    <p>عرض خاص: <span>الشحن مجاناً</span> ، و الدفع عند الاستلام، اسرع واطلب الآن</p>
+    <p class="msg-2"></p>
+</div>
+<!--flash meg-->
+<!--flash meg-->
+<div class="flash-msg mobile text-center">
+    <p></p>عرض خاص: التوصيل بالمجان و الدفع عند الاستلام</p>
+    <p class="msg-2">اسرع واطلب الآن</p>
+</div>
+<!--flash meg-->
+
+<!--start header-->
+<header class="main-header pc-header">
+    <div class="container">
+         <div class="header-content">
+            <a href="/" class="brand">
+                <img src="../assets/images/logo.png" alt="">
+            </a>
+            <nav class="nav">
+                <li><a href="/">الصفحة الرئيسية</a></li>
+                <li><a href="categories.html">التصنيفات</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </nav>
+            <div class="actions">
+                <a href="javascript:void(0)" class="search-toggler">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <div class="cart-container" onclick="openNav()">
+                    <a href="javascript:void(0)" class="cart">
+                        <!-- <i class="fa fa-cart-shopping"></i> -->
+                        <span class="badge rounded-pill bg-success">1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </a>
+                    <div class="c-value">
+                        <span class="num">458</span>
+                        <span class="currency">ج.م</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="" class="header-form">
+    <div class="container">
+        <div class="form-content">
+            <select name="" id="">
+                <option value="">أزياء وموضة</option>
+                <option value="">موبايلات وتابلت</option>
+            </select>
+            <div class="search-area">
+                <input type="search" placeholder="البحث عن منتج">
+                <!-- form submit button -->
+                <!-- <button type="submit" onclick="redirectPage('pages/search-results.html')" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button> -->
+                <!-- form redirect to result testcase -->
+                <a href="search-results.html" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    </form>
+</header>
+
+<!--cart side menu-->
+<div id="mySidenav" class="sidenav">
+    <div class="cart-header">
+        <h3>
+            سلة مشترياتي
+            <small>2 عناصر</small>
+        </h3>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="cart-body">
+        <div class="cart-list">
+            <form action="">
+                <ul class="list-unstyled">
+                    <li class="cart-item">
+                        <img src="../assets/images/download.jpg" alt="">
+                        <div class="item-body">
+                            <div class="item-details">
+                                <h3><a href="#">آلة خياطة محمولة يدوية</a></h3>
+                                <div class="quantity-wrapper">
+                                    <span class="quantity">
+                                        الكمية
+                                        <small>5</small>
+                                    </span>
+                                    <span class="currency-value">
+                                        <span class="value">199</span>
+                                        <span class="currency">ج.م</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="edit item-btn-action">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button class="delete item-btn-action">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="cart-footer">
+        <h4>مجموع سلة التسوق
+            <span class="currency-value">
+                <span class="value">199</span>
+                <span class="currency">ج.م</span>
+            </span>
+        </h4>
+        <div class="cart-actions">
+            <a href="cart.html"><button class=" button btn-block primary-btn">شراء الآن</button></a>
+            <button class=" button default-btn">استمر في التسوق</button>
+        </div>
+    </div>
+</div>
+<!--end cart side menu-->
+
+<!--right side menu-->
+<div id="mySideright" class="right-side-nav">
+    <div class="right-content">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOpenSideMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <a href="/" class="nav-bar">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
+        <form action="">
+            <div class="search-input">
+                <input type="search" placeholder="البحث عن منتج">
+                <!-- <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button> -->
+                <!-- form redirect to result testcase -->
+                <a href="empty-search.html">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </form>
+        <ul class="list-unstyled nav-list">
+            <li>
+                <a href="/">الصفحة الرئيسية</a>
+                <i class="fa fa-angle-left"></i>
+            </li>
+            <li>
+                <a href="categories.html">التصنيفات </a>
+                <i class="fa fa-angle-left"></i>
+            </li>
+            <li>
+                <a href="contact.html">اتصل بنا </a>
+                <i class="fa fa-angle-left"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--end right side menu-->
+
+<header class="main-header mobile-header">
+    <div class="container-fluid">
+        <div class="header-content">
+            <div class="mob-brand">
+                <a class="bars" href="javascript:void(0)" onclick="openSideMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </a>
+                <a href="/" class="brand">
+                    <img src="../assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="actions">
+                <a href="javascript:void(0)" class="search-toggler">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" class="cart" onclick="openNav()">
+                    <span class="badge rounded-pill bg-success">1</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <form action="" class="header-form">
+        <div class="container">
+            <div class="form-content">
+                <select name="" id="">
+                    <option value="">أزياء وموضة</option>
+                    <option value="">موبايلات وتابلت</option>
+                </select>
+                <div class="search-area">
+                    <input type="search" placeholder="البحث عن منتج">
+                    <!-- form submit btn -->
+                    <!-- <button type="submit" class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </button> -->
+                    <!-- form redirect to result testcase -->
+                    <a href="search-results.html" class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</header>
+<!--end header-->
+
+<section class="my-3 gallery-section">
+    <div class="container my-5">
+        <div class="row">
+            <h3 class="text-right d-block d-md-none">مصباح الطاقة الشمسية على شكل كاميرا لمنع السرقة</h3>
+            <div class="col-12 col-md-6">
+                <div class="fotorama gallery" data-height="500" data-nav="thumbs" data-allowfullscreen="true">
+                    <a href="1.jpg" class="gallery-thumbnail"><img src="../assets/images/product/1.jpeg"></a>
+                    <a href="1.jpg" class="gallery-thumbnail"><img src="../assets/images/product/2.jpeg"></a>
+                    <a href="1.jpg" class="gallery-thumbnail"><img src="../assets/images/product/3.jpeg"></a>
+                    <a href="1.jpg" class="gallery-thumbnail"><img src="../assets/images/product/4.jpeg"></a>
+                    <a href="https://youtu.be/w3E_6WFdUDg?list=PL3Onu1mdV7YHMFWdWgqgyy0UanQ7xfXWY">Celestial Dynamics</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 product-details text-right">
+                <h3 class="d-none d-md-block">مصباح الطاقة الشمسية على شكل كاميرا لمنع السرقة</h3>
+                <div class="price">
+                    <span class="before">
+                        <span class="value">125</span>
+                        <span class="currency">ج.م</span>
+                    </span>
+                    <span class="after">
+                           <span class="value">145</span>
+                        <span class="currency">ج.م</span>
+                    </span>
+                </div>
+                <p class="text-center my-3">سارع! فقط 8 قطعة متبقية في المخزن!</p>
+                <p class="text-center mb-3">يشاهده <span class="viewers">9</span> متصفح في الوقت الحالي.</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-3">
+                        <p id="day" class="text-center duration has-del">00</p>
+                        <p class="text-center duration-type">يوم</p>
+                    </div>
+                    <div class="col-3">
+                        <p id="hour" class="text-center duration has-del">01</p>
+                        <p class="text-center duration-type">ساعة</p>
+                    </div>
+                    <div class="col-3">
+                        <p id="min" class="text-center duration has-del">45</p>
+                        <p class="text-center duration-type">دقيقة</p>
+                    </div>
+                    <div class="col-3">
+                        <p id="sec" class="text-center duration">13</p>
+                        <p class="text-center duration-type">ثانية</p>
+                    </div>
+                </div>
+                <h4 id="end"></h4>
+                <hr>
+                <h5 class="my-3">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                    أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                    
+                    أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+                    
+                    أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                    
+                    نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+                    
+                    كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.
+                </h5>
+                <h3 class="mb-3">المميزات</h3>
+                <ul class="mr-3">
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                    <li>أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور</li>
+                </ul>
+                <div class="product-purchase actions my-3">
+                    <button type="button" class="btn btn-light mx-2">-</button>
+                    <span class="mt-3 mt-sm-2">2</span>
+                    <button type="button" class="btn btn-light mx-2">+</button>
+                    <a href="checkout.html" style="width: 100%; text-decoration: none;"><button type="button" class="btn btn-block btn-success mx-2" style="width: 100%">اضغط هنا للطلب</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- start footer -->
+<footer>
+    <div class="footer-brand">
+        <a href="/">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
+    </div>
+<div class="container">
+    <div class="footer-body">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer-item">
+                    <h3>عن المتجر</h3>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="about.html">عن المتجر</a></li>
+                        <li><a href="payment.html">طرق الدفع</a></li>
+                        <li><a href="delivery.html">الشحن والتسليم</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-item">
+                    <h3> الشروط والسياسات</h3>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="terms.html">سياسة الاستخدام </a></li>
+                        <li><a href="return-policy.html">سياسة الاستبدال والاسترجاع </a></li>
+                        <li><a href="privacy.html"> سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-item">
+                    <h3>اتصل بنا</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">اتصل بنا </a></li>
+                        <li><a href="faq.html"> الاسئلة المتكررة </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!--end footer-->
+
+<script src="../helpers/js/jquery-3.4.1.min.js"></script>
+<script src="../helpers/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+<script>
+function openNav() {
+    // if(screen.width < '640px') {
+    document.querySelector(".sidenav").style.width = "320px";
+    closeOpenSideMenu()
+}
+
+function closeNav() {
+    document.querySelector(".sidenav").style.width = "0";
+}
+function openSideMenu() {
+    document.querySelector(".right-side-nav").style.width = "320px";
+    closeNav();
+}
+
+function closeOpenSideMenu() {
+    document.querySelector(".right-side-nav").style.width = "0";
+}
+
+
+</script>
+
+<script>
+    // The data/time we want to countdown to
+    var countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
+
+    // Run countdown every second
+    var countdown = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+        
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        
+    // Result is output to the specific element
+    document.getElementById("day").innerHTML = days
+    document.getElementById("hour").innerHTML = hours
+    document.getElementById("min").innerHTML = minutes
+    document.getElementById("sec").innerHTML = seconds
+        
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(countdown);
+        document.getElementById("day").innerHTML = ""
+        document.getElementById("hour").innerHTML = "" 
+        document.getElementById("min").innerHTML = ""
+        document.getElementById("sec").innerHTML = ""
+        document.getElementById("end").innerHTML = "انتهي الوقت!";
+    }
+    }, 1000);
+</script>
+</body>
+</html>
