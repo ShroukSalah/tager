@@ -811,7 +811,7 @@ p {
   border-color: #803160;
   border: 1px solid;
   display: block;
-  width: 190px;
+  width: 100%;
   margin: auto;
   padding: 5px;
   border-radius: 4px;
