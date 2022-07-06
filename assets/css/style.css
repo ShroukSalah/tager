@@ -647,13 +647,13 @@ p {
 }
 
 .slider .carousel-inner {
-  height: 270px;
+  height: 555px;
   margin-bottom: 20px;
   position: relative;
 }
 
 .slider .carousel-inner img {
-  height: 270px;
+  height: 555px;
   opacity: 0.5;
   object-fit: cover;
 }
@@ -665,7 +665,7 @@ p {
 @media (min-width: 768px) {
   .slider .carousel-inner .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
