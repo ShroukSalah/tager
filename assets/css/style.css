@@ -1306,16 +1306,20 @@ footer .footer-body .footer-item ul li a:hover {
 
 
 /* ================================ new styles ====================== */
-*{
+* {
   transition: all .5s ease-in-out;
 }
+
 .default-color,
 a:hover {
   color: #803160;
 }
-.summary, .tax {
+
+.summary,
+.tax {
   border-bottom: 2px solid #803160;
 }
+
 .form-control:focus {
   color: #495057;
   background-color: #fff;
@@ -1323,11 +1327,13 @@ a:hover {
   outline: 0;
   box-shadow: none;
 }
+
 .features {
   background-color: #F4F6F6;
   border-radius: 40px 40px 0 0;
   box-shadow: -1px -2px 20px #c1c1c170;
 }
+
 .whatsApp-msgs {
   position: fixed;
   bottom: 60px;
@@ -1341,13 +1347,14 @@ a:hover {
   box-shadow: -1px 0px 10px #8031608f;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #ee4444a4;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -1365,15 +1372,18 @@ footer .social a {
   margin-inline-end: 4px;
   color: #803160;
 }
+
 footer .social a:hover {
   border-radius: 50%;
   color: #000;
 }
+
 .default-btn:hover {
   color: #ffffff;
   background-color: #07a524;
   border-color: #ffffff;
 }
+
 .default-btn {
   color: #803160;
   background-color: #ffffff;
@@ -1386,91 +1396,164 @@ footer .social a:hover {
   border-radius: 4px;
   text-decoration: none;
   transition: all .25s;
-} 
+}
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
+
 .sold-together .btn-outline-primary,
 .sizes .btn-outline-primary,
 .images .btn-outline-primary {
-    color: #803160;
-    border-color: #803160;
+  color: #803160;
+  border-color: #803160;
 }
 
 .sizes .btn-outline-primary:hover,
 .sizes .btn-check:checked+.btn-outline-primary,
 .sizes .btn-check:active+.btn-outline-primary,
-.sizes .btn-check:checked+.btn-outline-primary p.text-dark ,
+.sizes .btn-check:checked+.btn-outline-primary p.text-dark,
 .images .btn-outline-primary:hover,
 .images .btn-check:checked+.btn-outline-primary,
 .images .btn-check:active+.btn-outline-primary,
 .images .btn-check:checked+.btn-outline-primary p.text-dark,
-.sold-together  .btn-outline-primary:hover,
-.sold-together  .btn-check:checked+.btn-outline-primary,
-.sold-together  .btn-check:active+.btn-outline-primary,
-.sold-together  .btn-check:checked+.btn-outline-primary p.text-dark  {
-    color: #fff !important;
-    background-color: #803160;
-    border-color: #803160;
-    font-weight: 700;
+.sold-together .btn-outline-primary:hover,
+.sold-together .btn-check:checked+.btn-outline-primary,
+.sold-together .btn-check:active+.btn-outline-primary,
+.sold-together .btn-check:checked+.btn-outline-primary p.text-dark {
+  color: #fff !important;
+  background-color: #803160;
+  border-color: #803160;
+  font-weight: 700;
 }
 
 .sizes .btn-check:checked+.btn-outline-primary:focus,
-.sizes .btn-check:focus+.btn-outline-primary ,
+.sizes .btn-check:focus+.btn-outline-primary,
 .images .btn-check:checked+.btn-outline-primary:focus,
 .images .btn-check:focus+.btn-outline-primary,
 .sold-together .btn-check:checked+.btn-outline-primary:focus,
-.sold-together .btn-check:focus+.btn-outline-primary{
-    box-shadow: none;
+.sold-together .btn-check:focus+.btn-outline-primary {
+  box-shadow: none;
 }
-.images .btn img{
-    height: 50px;
-    width: 100%;
-    object-fit: contain;
+
+.images .btn img {
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
 }
+
 .dropdown .form-select:focus {
-    border-color: #803160;
-    outline: 0;
-    box-shadow: none;
-    color: #803160;
+  border-color: #803160;
+  outline: 0;
+  box-shadow: none;
+  color: #803160;
 }
-.colors .btn-check:checked+.btn:before{
-    content: "\f00c";
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    font-size: 15px;
-    text-align: center;
+
+.colors .btn-check:checked+.btn:before {
+  content: "\f00c";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  font-size: 15px;
+  text-align: center;
 }
 
 .btn-group.colors .btn {
-    width: 25px !important;
-    height: 25px;
-    border-radius: 50%;
-    margin-inline: 10px;
-    position: relative;
+  width: 25px !important;
+  height: 25px;
+  border-radius: 50%;
+  margin-inline: 10px;
+  position: relative;
 }
 
 .sold-together img,
 .second-sold-together img {
-    width: auto;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 10px;
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+#productDetailsSlider img {
+  border-radius:0px;
+  box-shadow: 0px 0px 10px #bbafaf29;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+#product-details-Slider2 .swiper-slide {
+  height: 400px;
+  width: 100%;
+}
+
+#product-details-Slider2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px #bbafaf29;
+}
+
+#product-details-Slider2 .swiper-button-prev,
+#product-details-Slider2 .swiper-button-next {
+  color: #803160;
+}
+
+.snippet input {
+  text-align-last: center;
+  padding: 0;
+  height: 40px;
+  width: 50px;
+  background: transparent;
+  border: none;
+}
+
+.snippet {
+  color: #606060;
+  background-color: #ffffff !important;
+  border-color: #ffffff;
+  border: 1px solid #803160;
+  display: flex;
+  border-radius: 5px;
+  width: fit-content;
+  direction: ltr;
+}
+
+.snippet input[type="number"] {
+  border-right: 1px solid #803160;
+  border-radius: 0;
+  border-left: 1px solid #803160;
+  padding: 0;
+  padding-left: 0px;
+}
+
+.snippet input:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  #productDetailsSlider img {
+    height: 300px;
+  }
+  .snippet {
+    margin-inline: auto;
+}
 }
 
 @media (min-width: 1200px) {
   .fs-2 {
     font-size: 2rem !important;
   }
+
   .fs-4 {
     font-size: 1.5rem !important;
-}
+  }
 }
