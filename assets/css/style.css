@@ -1482,7 +1482,7 @@ footer .social a:hover {
 }
 
 #productDetailsSlider img {
-  border-radius:0px;
+  border-radius: 0px;
   box-shadow: 0px 0px 10px #bbafaf29;
   height: 400px;
   width: 100%;
@@ -1539,13 +1539,87 @@ footer .social a:hover {
 .snippet input:focus {
   outline: none;
 }
+
+/* ================== review =============== */
+body {
+  text-align: start;
+}
+
+.review,
+.dropdown-item {
+  text-align: start;
+}
+
+.review p {
+  font-family: cairoLight;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  margin-inline-end: 5px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 5px;
+}
+
+.review a {
+  cursor: pointer;
+}
+
+.review i {
+  color: #EDE149
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+form .review-img i {
+  position: absolute;
+  left: 30px;
+  top: 45px;
+  font-size: 25px;
+  color: #803160;
+}
+#rateBox .icon {
+  width: 25px;
+  height: 25px;
+}
+#rateBox .rate_text{
+  font-size: 20px !important;
+  margin-inline: 25px;
+}
+.dropdown-filter {
+  box-shadow: 0px 0px 10px #eee;
+  border-radius: 10px;
+  right: 0 !important;
+}
+
+.modal .close {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  font-size: 40px;
+  margin-block: auto;
+  padding: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none
+}
+
 @media (max-width: 768px) {
   #productDetailsSlider img {
     height: 300px;
   }
+
   .snippet {
     margin-inline: auto;
-}
+  }
 }
 
 @media (min-width: 1200px) {

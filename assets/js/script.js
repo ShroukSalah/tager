@@ -6,6 +6,122 @@ $(document).ready(function () {
     $('.qty-minus ').click(function () {
         if ($(this).prev().val() > 1) $(this).prev().val(+$(this).prev().val() - 1);
     });
+      // ================================= rate box ====================
+      $("#rateBox").rate({
+        length: 5,
+        value: 3.5,
+        readonly: false,
+        size: '48px',
+        selectClass: 'fxss_rate_select',
+        incompleteClass: 'fxss_rate_no_all_select',
+        customClass: 'custom_class',
+        callback: function(object){
+            console.log(object)
+        }
+    });
+      //  ============================ list-reviews ====================
+
+        //blocksit define
+        // $(window).load(function () {
+        //     $('#list-reviews').BlocksIt({
+        //         numOfCol: 2,
+        //         offsetX: 8,
+        //         offsetY: 8
+        //     });
+        // });
+
+        //window resize
+        // var currentWidth = 1100;
+        // $(window).resize(function () {
+            var winWidth = $(window).width();
+            // var conWidth;
+            if (winWidth < 660) {
+                // conWidth = 440;
+                // col = 2
+                $('#list-reviews').BlocksIt({
+                    numOfCol: 1,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            } else if (winWidth < 880) {
+                // conWidth = 660;
+                // col = 2
+                $('#list-reviews').BlocksIt({
+                    numOfCol: 2,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            }  else {
+                // conWidth = 1100;
+                // col = 4;
+                $('#list-reviews').BlocksIt({
+                    numOfCol: 2,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            }
+
+            // if (conWidth != currentWidth) {
+            //     currentWidth = conWidth;
+            //     $('#list-reviews').width(conWidth);
+            //     $('#list-reviews').BlocksIt({
+            //         numOfCol: col,
+            //         offsetX: 8,
+            //         offsetY: 8
+            //     });
+            // }
+        // });
+//  ============================ grid-reviews ====================
+        //blocksit define
+        // $(window).load(function () {
+        //     $('#grid-reviews').BlocksIt({
+        //         numOfCol: 4,
+        //         offsetX: 8,
+        //         offsetY: 8
+        //     });
+        // });
+
+        //window resize
+        // var currentWidth = 1100;
+        // $(window).resize(function () {
+            var winWidth = $(window).width();
+         
+            if (winWidth < 660) {
+                $('#grid-reviews').BlocksIt({
+                    numOfCol: 2,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            } else if (winWidth < 880) {
+                $('#grid-reviews').BlocksIt({
+                    numOfCol: 2,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            } else if (winWidth < 1100) {
+                $('#grid-reviews').BlocksIt({
+                    numOfCol: 3,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            } else {
+                $('#grid-reviews').BlocksIt({
+                    numOfCol: 4,
+                    offsetX: 8,
+                    offsetY: 8
+                });
+            }
+
+            // if (conWidth != currentWidth) {
+            //     currentWidth = conWidth;
+            //     $('#grid-reviews').width(conWidth);
+            //     $('#grid-reviews').BlocksIt({
+            //         numOfCol: col,
+            //         offsetX: 8,
+            //         offsetY: 8
+            //     });
+            // }
+        // });
 });
 // ================================================
 $(function () {

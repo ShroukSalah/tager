@@ -16,6 +16,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../helpers/css/bootstrap.min.css">
     <link rel="stylesheet" href='../assets/css/swiper.css'>
+    <link rel="stylesheet" href='../assets/css/flipdown.min.css'>
+    <link rel="stylesheet" href="../assets/css/rate.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 
     <!-- gallery -->
@@ -572,10 +574,10 @@
                         </div>
                         <div class="w-100 px-3">
                             <a href="checkout.html" class="btn w-100 btn-block btn-success px-3 py-2">
-                               أطلب 
+                                أطلب
                             </a>
                         </div>
-                      
+
                         <div class=" ">
                             <a href="" class="btn default-btn my-0 w-100 h-100 px-lg-3 px-2">
                                 <i class="fas fa-share-alt"></i>
@@ -599,6 +601,409 @@
                         ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا كيو أوفيسيا ديسيريونتموليت انيم أيدي
                         ايست لابوريوم.
                     </p>
+                </div>
+                <!-- list reviews -->
+                <div class="col-12">
+                    <div class="title px-3 position-relative my-3">
+                        <h3 class=" pe-3 text-center">
+                            التقييمات
+                        </h3>
+                    </div>
+                    <div class="text-end px-3">
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn default-btn   dropdown-toggle" data-toggle="dropdown">
+                                <i class="far fa-filter fw-bold font-weight-bold"></i>
+                            </button>
+
+                            <div class="dropdown-menu border-0 dropdown-filter">
+                                <a class="dropdown-item" href="#">الأحدث</a>
+                                <a class="dropdown-item" href="#">الأقدم</a>
+                                <a class="dropdown-item" href="#">الأعلي تقيماً</a>
+                                <a class="dropdown-item" href="#">الأقل تقييماً</a>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn default-btn w-auto d-inline-block" data-toggle="modal"
+                            data-target="#reviewModal">
+                            اضافه تقييم
+                        </button>
+
+                    </div>
+                    <!-- list -->
+                    <div class="ps-3">
+                        <div class="position-relative" id="list-reviews">
+                            <div class="grid my-3">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid my-3">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره
+                                        الراقصه
+                                        رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا
+                                        واعجبتني
+                                        الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid my-3">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid my-3">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- grid -->
+                    <div class="ps-3">
+                        <div class=" position-relative" id="grid-reviews">
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره
+                                        الراقصه
+                                        رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا
+                                        واعجبتني
+                                        الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review1" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره
+                                        الراقصه
+                                        رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا
+                                        واعجبتني
+                                        الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review2" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review3" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  my-3 grid">
+                                <div class="border h-100 p-3 review">
+                                    <h6 class="fw-bold">
+                                        احمد محمد
+                                    </h6>
+                                    <div class="d-lg-flex justify-content-between my-3">
+                                        <span class="text-muted">
+                                            12/12/2022
+                                        </span>
+                                        <div>
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        الصباره الراقصه رائعة جدا واعجبتني الصباره الراقصه رائعة جدا واعجبتني
+                                    </p>
+                                    <div>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                        <a data-fancybox="review4" data-src="../assets/images/2.jpg">
+                                            <img src="../assets/images/2.jpg" class="img-fluid" alt="product image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1190,10 +1595,58 @@
         </div>
     </footer>
     <!--end footer-->
+    <!-- The Modal -->
+    <div class="modal fade" id="reviewModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">التقييم</h4>
+                    <button type="button" class="btn close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body pb-5 px-4">
+                    <div>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 text-center py-3">
+                                    <div id="rateBox"></div>
+                                </div>
+                                <div class="mb-3 col-lg-6">
+                                    <label for="userName" class="form-label">اسم المستخدم</label>
+                                    <input type="text" class="form-control" id="userName" placeholder="الاسم"
+                                        name="pswd">
+                                </div>
+                                <div class="mb-3   col-lg-6">
+                                    <label for="email" class="form-label"> البريد الالكتروني </label>
+                                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني"
+                                        name="email">
+                                </div>
+                                <div class="mb-3   col-lg-12 position-relative review-img">
+                                    <label for="image" class="form-label"> صورة المنتج </label>
+                                    <input type="file" class="form-control" id="image" placeholder="صورة المنتج"
+                                        name="file" multiple>
+                                    <i class="far fa-images"></i>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="comment" class="form-label">تعليقك</label>
+                                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn default-btn ">ارسال</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script src="../helpers/js/jquery-3.4.1.min.js"></script>
-    <script src="../helpers/js/bootstrap.min.js"></script>
+     <script src="../helpers/js/bootstrap.min.js"></script>
     <script type="text/javascript " src="../assets/js/swiper.js"></script>
+    <script type="text/javascript " src="../assets/js/flipdown.min.js"></script>
+    <script type="text/javascript " src="../assets/js/rate.js"></script>
+    <script type="text/javascript " src="../assets/js/blocksit.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
