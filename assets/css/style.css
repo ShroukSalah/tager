@@ -1577,7 +1577,9 @@ body {
 ::-webkit-file-upload-button {
   display: none;
 }
-
+.default-bg{
+  background-color: #803160;
+}
 form .review-img i {
   position: absolute;
   left: 30px;
