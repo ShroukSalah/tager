@@ -1574,12 +1574,18 @@ body {
   color: #EDE149
 }
 
+.text-start {
+  text-align: start !important;
+}
+
 ::-webkit-file-upload-button {
   display: none;
 }
-.default-bg{
+
+.default-bg {
   background-color: #803160;
 }
+
 form .review-img i {
   position: absolute;
   left: 30px;
@@ -1587,14 +1593,17 @@ form .review-img i {
   font-size: 25px;
   color: #803160;
 }
+
 #rateBox .icon {
   width: 25px;
   height: 25px;
 }
-#rateBox .rate_text{
+
+#rateBox .rate_text {
   font-size: 20px !important;
   margin-inline: 25px;
 }
+
 .dropdown-filter {
   box-shadow: 0px 0px 10px #eee;
   border-radius: 10px;
@@ -1614,6 +1623,24 @@ form .review-img i {
   box-shadow: none
 }
 
+.second-together-total {
+  background: transparent;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #803160;
+  color: #803160;
+}
+
+.together-total {
+  background: #80316021;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+input{
+  accent-color: #803160;
+}
 @media (max-width: 768px) {
   #productDetailsSlider img {
     height: 300px;
@@ -1621,6 +1648,29 @@ form .review-img i {
 
   .snippet {
     margin-inline: auto;
+  }
+
+  .sold-together h4,
+  .second-sold-together h4 {
+    font-size: 18px;
+  }
+
+  .sold-together p,
+  .second-sold-together p {
+    font-size: 12px;
+  }
+
+  .sold-together img,
+  .second-sold-together img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
