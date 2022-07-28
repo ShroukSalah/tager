@@ -581,7 +581,7 @@
             margin-bottom: 5px;
           }
           .after{
-            color: #803160;
+            color: #E41234;
             font-size: 16px;
             font-weight: 700;
           }
@@ -590,9 +590,9 @@
       .actions{
         margin: 15px 0 0;
         a{
-          color: #803160;
+          color: #E41234;
           background-color: #ffffff;
-          border-color: #803160;
+          border-color: #E41234;
           border: 1px solid;
           display: block;
           width: 190px;
@@ -603,21 +603,21 @@
           transition: all .25s;
           &:hover{
             color: #ffffff;
-            background-color: #803160;
+            background-color: #E41234;
             border-color: #ffffff;
           }
         }
       }
     }
     &:hover{
-      border-color: #803160;
+      border-color: #E41234;
       .product-thumbnail{
         img{
           transform: translate(50%,-50%) scale(1.1);
         }
       }
       .product-details{
-        border-color: #803160;
+        border-color: #E41234;
       }
     }
   }
