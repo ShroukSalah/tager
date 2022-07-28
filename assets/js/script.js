@@ -246,3 +246,65 @@ var swiper2 = new Swiper("#product-details-Slider2", {
         swiper: swiper,
     },
 });
+
+
+// =================================== timer =========================
+let hourVal = document.querySelector(".timer .count .hour"),
+    minuteVal = document.querySelector(".timer .count .minute"),
+    secondVal = document.querySelector(".timer .count .second");
+
+var myTimer;
+
+function clock() {
+    myTimer = setInterval(myClock, 1000);
+    var c = 5400; //Initially set to 1 hour
+
+    function myClock() {
+        --c
+        var seconds = c % 60; // Seconds that cannot be written in minutes
+        var secondsInMinutes = (c - seconds) / 60; // Gives the seconds that COULD be given in minutes
+        var minutes = secondsInMinutes % 60; // Minutes that cannot be written in hours
+        var hours = (secondsInMinutes - minutes) / 60;
+        // Now in hours, minutes and seconds, you have the time you need.
+        if (seconds < 10) {
+            seconds = `0${seconds}`;
+        }
+        if (secondsInMinutes < 10) {
+            secondsInMinutes = `0${secondsInMinutes}`;
+        }
+        if (minutes < 10) {
+            minutes = `0${minutes}`;
+        }
+        if (hours < 10) {
+            hours = `0${hours}`;
+        }
+        hourVal.innerHTML = hours;
+        minuteVal.innerHTML = minutes;
+        secondVal.innerHTML = seconds;
+        if (c == 0) {
+            clearInterval(myTimer);
+        }
+    }
+}
+clock();
+// =========================== FlipDown Timer  ===========================
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Unix timestamp (in seconds) to count down to
+    var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
+
+    // Set up FlipDown
+    var flipdown = new FlipDown(twoDaysFromNow)
+
+      // Start the countdown
+      .start()
+
+      // Do something when the countdown ends
+      .ifEnded(() => {
+        console.log('The countdown has ended!');
+      });
+
+    // Show version number
+    // var ver = document.getElementById('ver');
+    // ver.innerHTML = flipdown.version;
+  });
