@@ -1730,6 +1730,14 @@ input {
   .slider .carousel-inner img {
     height: 222px;
   }
+  .snippet input {
+    text-align-last: center;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: none;
+}
 }
 
 @media (min-width: 1200px) {
