@@ -1390,7 +1390,8 @@ a:hover {
   background-color: #ee4444;
 }
 
-footer .social a {
+footer .social a,
+.social a {
   display: inline-block;
   border: 1px solid #E41234;
   text-align: center;
