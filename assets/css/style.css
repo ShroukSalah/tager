@@ -3,7 +3,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* width */
 
+::-webkit-scrollbar {
+  width: 10px;
+  /* display: none; */
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  /* display: none; */
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #E41234;
+  /* display: none; */
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252b37;
+  /* display: none; */
+}
 @font-face {
   font-family: cairoLight;
   src: url(../fonts/Cairo/Cairo-light.ttf);
@@ -1694,6 +1723,74 @@ input {
   background-color: #e5aeb7;
 }
 
+#categoriesSlider2 .product-details {
+  border-color: transparent;
+  padding: 20px 15px;
+  text-align: center;
+  border-top: 0px solid #f0f0f0;
+  transition: border .25s;
+  background: #e412343d;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  background-image: linear-gradient(#e4123400, #e4123466, #e41234);
+}
+#categoriesSlider2 .product-details a {
+  color: #ffffff;
+}
+#categoriesSlider2 .product-item {
+ 
+  margin-bottom: 0;
+}
+#categoriesSlider2 .swiper-slide{
+  height: 250px;
+}
+#categoriesSlider2 .swiper-slide h3{
+  margin-bottom: 0;
+}
+#categoriesSlider2 .product-item ,
+#categoriesSlider2 .product-item  .product-thumbnail,
+#categoriesSlider2 .product-item .product-thumbnail img{
+  
+  height: 100%;
+}
+.product-details:before{
+  content: "";
+}
+#categoriesSlider3 .product-item {
+  border: none;
+  box-shadow: none;
+  border-radius: 3px;
+  border-color: #f0f0f0;
+  margin-bottom: 30px;
+}
+.orders .order {
+  border-bottom: 1px solid #e4123466;
+  margin-bottom: 20px !important;
+}
+.orders .order .snippet input[type="number"] {
+  
+  text-align-last: end;
+}
+.orders .order  .snippet input {
+ 
+  height: 40px;
+  width: 40px;
+}
+.order .pro-img {
+  border-radius:  0px;
+  height: 90px;
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid #e4123466;
+}
+.banners img{
+  max-height: 250px;
+  object-fit: cover;
+}
+/* =============================================================================  */
 @media (max-width: 768px) {
   #productDetailsSlider img {
     height: 300px;
@@ -1730,6 +1827,7 @@ input {
   .slider .carousel-inner img {
     height: 222px;
   }
+
   .snippet input {
     text-align-last: center;
     padding: 0;
@@ -1737,7 +1835,7 @@ input {
     width: 40px;
     background: transparent;
     border: none;
-}
+  }
 }
 
 @media (min-width: 1200px) {

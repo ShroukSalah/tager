@@ -1,4 +1,10 @@
 $(document).ready(function () {
+      // ===================== delete item from cart ====================
+      $(".delete").on('click', function () {
+        $(this).parent().closest(".order").remove();
+
+
+    });
     // ============== ===================== 
     $('.qty-plus').click(function () {
         $(this).next().val(+$(this).next().val() + 1);
@@ -6,8 +12,8 @@ $(document).ready(function () {
     $('.qty-minus ').click(function () {
         if ($(this).prev().val() > 1) $(this).prev().val(+$(this).prev().val() - 1);
     });
-      // ================================= rate box ====================
-      $("#rateBox").rate({
+    // ================================= rate box ====================
+    $("#rateBox").rate({
         length: 5,
         value: 3.5,
         readonly: false,
@@ -15,113 +21,113 @@ $(document).ready(function () {
         selectClass: 'fxss_rate_select',
         incompleteClass: 'fxss_rate_no_all_select',
         customClass: 'custom_class',
-        callback: function(object){
+        callback: function (object) {
             console.log(object)
         }
     });
-      //  ============================ list-reviews ====================
+    //  ============================ list-reviews ====================
 
-        //blocksit define
-        // $(window).load(function () {
-        //     $('#list-reviews').BlocksIt({
-        //         numOfCol: 2,
-        //         offsetX: 8,
-        //         offsetY: 8
-        //     });
-        // });
+    //blocksit define
+    // $(window).load(function () {
+    //     $('#list-reviews').BlocksIt({
+    //         numOfCol: 2,
+    //         offsetX: 8,
+    //         offsetY: 8
+    //     });
+    // });
 
-        //window resize
-        // var currentWidth = 1100;
-        // $(window).resize(function () {
-            var winWidth = $(window).width();
-            // var conWidth;
-            if (winWidth < 660) {
-                // conWidth = 440;
-                // col = 2
-                $('#list-reviews').BlocksIt({
-                    numOfCol: 1,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            } else if (winWidth < 880) {
-                // conWidth = 660;
-                // col = 2
-                $('#list-reviews').BlocksIt({
-                    numOfCol: 2,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            }  else {
-                // conWidth = 1100;
-                // col = 4;
-                $('#list-reviews').BlocksIt({
-                    numOfCol: 2,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            }
+    //window resize
+    // var currentWidth = 1100;
+    // $(window).resize(function () {
+    var winWidth = $(window).width();
+    // var conWidth;
+    if (winWidth < 660) {
+        // conWidth = 440;
+        // col = 2
+        $('#list-reviews').BlocksIt({
+            numOfCol: 1,
+            offsetX: 8,
+            offsetY: 8
+        });
+    } else if (winWidth < 880) {
+        // conWidth = 660;
+        // col = 2
+        $('#list-reviews').BlocksIt({
+            numOfCol: 2,
+            offsetX: 8,
+            offsetY: 8
+        });
+    } else {
+        // conWidth = 1100;
+        // col = 4;
+        $('#list-reviews').BlocksIt({
+            numOfCol: 2,
+            offsetX: 8,
+            offsetY: 8
+        });
+    }
 
-            // if (conWidth != currentWidth) {
-            //     currentWidth = conWidth;
-            //     $('#list-reviews').width(conWidth);
-            //     $('#list-reviews').BlocksIt({
-            //         numOfCol: col,
-            //         offsetX: 8,
-            //         offsetY: 8
-            //     });
-            // }
-        // });
-//  ============================ grid-reviews ====================
-        //blocksit define
-        // $(window).load(function () {
-        //     $('#grid-reviews').BlocksIt({
-        //         numOfCol: 4,
-        //         offsetX: 8,
-        //         offsetY: 8
-        //     });
-        // });
+    // if (conWidth != currentWidth) {
+    //     currentWidth = conWidth;
+    //     $('#list-reviews').width(conWidth);
+    //     $('#list-reviews').BlocksIt({
+    //         numOfCol: col,
+    //         offsetX: 8,
+    //         offsetY: 8
+    //     });
+    // }
+    // });
+    //  ============================ grid-reviews ====================
+    //blocksit define
+    // $(window).load(function () {
+    //     $('#grid-reviews').BlocksIt({
+    //         numOfCol: 4,
+    //         offsetX: 8,
+    //         offsetY: 8
+    //     });
+    // });
 
-        //window resize
-        // var currentWidth = 1100;
-        // $(window).resize(function () {
-            var winWidth = $(window).width();
-         
-            if (winWidth < 660) {
-                $('#grid-reviews').BlocksIt({
-                    numOfCol: 2,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            } else if (winWidth < 880) {
-                $('#grid-reviews').BlocksIt({
-                    numOfCol: 2,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            } else if (winWidth < 1100) {
-                $('#grid-reviews').BlocksIt({
-                    numOfCol: 3,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            } else {
-                $('#grid-reviews').BlocksIt({
-                    numOfCol: 4,
-                    offsetX: 8,
-                    offsetY: 8
-                });
-            }
+    //window resize
+    // var currentWidth = 1100;
+    // $(window).resize(function () {
+    var winWidth = $(window).width();
 
-            // if (conWidth != currentWidth) {
-            //     currentWidth = conWidth;
-            //     $('#grid-reviews').width(conWidth);
-            //     $('#grid-reviews').BlocksIt({
-            //         numOfCol: col,
-            //         offsetX: 8,
-            //         offsetY: 8
-            //     });
-            // }
-        // });
+    if (winWidth < 660) {
+        $('#grid-reviews').BlocksIt({
+            numOfCol: 2,
+            offsetX: 8,
+            offsetY: 8
+        });
+    } else if (winWidth < 880) {
+        $('#grid-reviews').BlocksIt({
+            numOfCol: 2,
+            offsetX: 8,
+            offsetY: 8
+        });
+    } else if (winWidth < 1100) {
+        $('#grid-reviews').BlocksIt({
+            numOfCol: 3,
+            offsetX: 8,
+            offsetY: 8
+        });
+    } else {
+        $('#grid-reviews').BlocksIt({
+            numOfCol: 4,
+            offsetX: 8,
+            offsetY: 8
+        });
+    }
+
+    // if (conWidth != currentWidth) {
+    //     currentWidth = conWidth;
+    //     $('#grid-reviews').width(conWidth);
+    //     $('#grid-reviews').BlocksIt({
+    //         numOfCol: col,
+    //         offsetX: 8,
+    //         offsetY: 8
+    //     });
+    // }
+    // });
 });
 // ================================================
 $(function () {
@@ -215,7 +221,62 @@ var swiper = new Swiper("#productsSlider", {
         },
     },
 });
+// ======================== categoriesSlider2 ================
+var swiper = new Swiper("#categoriesSlider2", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    pagination: {
 
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        },
+    },
+});
+// ======================== categoriesSlider3 ================
+var swiper = new Swiper("#categoriesSlider3", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    pagination: {
+
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        },
+    },
+});
 // ======================== product-details==================
 var swiper = new Swiper("#productDetailsSlider", {
     slidesPerView: 1,
@@ -296,15 +357,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)
 
-      // Start the countdown
-      .start()
+        // Start the countdown
+        .start()
 
-      // Do something when the countdown ends
-      .ifEnded(() => {
-        console.log('The countdown has ended!');
-      });
+        // Do something when the countdown ends
+        .ifEnded(() => {
+            console.log('The countdown has ended!');
+        });
 
     // Show version number
     // var ver = document.getElementById('ver');
     // ver.innerHTML = flipdown.version;
-  });
+});
