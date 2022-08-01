@@ -348,6 +348,9 @@ function clock() {
     }
 }
 clock();
+// =================== wow script ===================
+new WOW().init();
+
 // =========================== FlipDown Timer  ===========================
 document.addEventListener('DOMContentLoaded', () => {
 
