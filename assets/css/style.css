@@ -1576,7 +1576,22 @@ footer .social a:hover {
 .snippet input:focus {
   outline: none;
 }
+.first-sold-together .products-img li {
+  display: inline-block;
+}
 
+.first-sold-together .products-img li img {
+  width: 75px;
+  height: 75px;
+  margin-inline: 10px;
+}
+
+.first-sold-together .products-img li:after {
+  content: "+";
+}
+.first-sold-together .products-img li:last-child::after{
+  display: none;
+}
 /* ================== review =============== */
 body {
   text-align: start;
