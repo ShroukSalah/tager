@@ -307,7 +307,33 @@ var swiper2 = new Swiper("#product-details-Slider2", {
         swiper: swiper,
     },
 });
-
+// ======================= categoriesSlider4 ================
+var swiper = new Swiper("#categoriesSlider4", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        },
+    },
+});
 
 // =================================== timer =========================
 let hourVal = document.querySelector(".timer .count .hour"),
