@@ -1,6 +1,6 @@
 $(document).ready(function () {
-      // ===================== delete item from cart ====================
-      $(".delete").on('click', function () {
+    // ===================== delete item from cart ====================
+    $(".delete").on('click', function () {
         $(this).parent().closest(".order").remove();
 
 
@@ -334,7 +334,38 @@ var swiper = new Swiper("#categoriesSlider4", {
         },
     },
 });
+// ======================== testmonialSlider ====================
+var swiper = new Swiper("#testmonialSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+    },
 
+});
+// =========================== map ========================
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
 // =================================== timer =========================
 let hourVal = document.querySelector(".timer .count .hour"),
     minuteVal = document.querySelector(".timer .count .minute"),
