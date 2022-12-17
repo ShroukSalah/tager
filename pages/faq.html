@@ -99,71 +99,132 @@
         </form>
     </header>
 
-    <!--cart side menu-->
-    <div id="mySidenav" class="sidenav">
-        <div class="cart-header">
-            <h3>
-                سلة مشترياتي
-                <small>2 عناصر</small>
-            </h3>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg>
-            </a>
-        </div>
-        <div class="cart-body">
-            <div class="cart-list">
-                <form action="">
-                    <ul class="list-unstyled">
-                        <li class="cart-item">
-                            <img src="../assets/images/download.jpg" alt="">
-                            <div class="item-body">
-                                <div class="item-details">
-                                    <h3><a href="#">آلة خياطة محمولة يدوية</a></h3>
-                                    <div class="quantity-wrapper">
-                                        <span class="quantity">
-                                            الكمية
-                                            <small>5</small>
-                                        </span>
-                                        <span class="currency-value">
-                                            <span class="value">199</span>
-                                            <span class="currency">ج.م</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="item-actions">
-                                    <button class="edit item-btn-action">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button class="delete item-btn-action">
-                                        <i class="far fa-trash-alt"></i>
-                                    </button>
+  <!--cart side menu-->
+  <div id="mySidenav" class="sidenav">
+    <div class="cart-header">
+        <h3>
+            سلة مشترياتي
+            <small>2 عناصر</small>
+        </h3>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </a>
+    </div>
+    <div class="cart-body">
+        <div class="orders">
+            <div class=" m-auto pb-3 mb-3 order">
+                <div class="row text-center">
+                    <div class="col-4 my-auto">
+                        <img src="../assets/images/1.jpg" class="img-fluid pro-img p-0">
+                    </div>
+
+                    <div class=" col-8 text-start ">
+                        <div class="d-inline-block  my-auto text-right">
+                            <a href="product-details.html" class="text-dark">
+                                <h6 class=" m-0 d-inline-block fw-bold ">
+                                    عطر الشعر جود جيرل
+                                    <span class="default-color fw-bold ms-3">
+                                        (2)
+                                    </span>
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="my-2">
+                            <span class="w-700 fontS-25 text-dark">
+                                99
+                            </span>
+                            <span>
+                                ريال
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="snippet my-3">
+                                    <input type="button" value="+" class="qty-plus">
+                                    <input type="number" value="1" class="qty" min="1" disabled="">
+                                    <input type="button" value="-" class="qty-minus">
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </form>
+                            <div class="my-auto">
+                                <button class="btn delete p-0">
+                                    <span class="text-danger w-700 mt-auto">
+                                        <i class="far fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="cart-footer">
-            <h4>مجموع سلة التسوق
-                <span class="currency-value">
-                    <span class="value">199</span>
-                    <span class="currency">ج.م</span>
-                </span>
-            </h4>
-            <div class="cart-actions">
-                <a href="cart.html"><button class=" button btn-block primary-btn">شراء الآن</button></a>
-                <button class=" button default-btn">استمر في التسوق</button>
+            <div class=" m-auto pb-3 mb-3 order">
+                <div class="row text-center">
+                    <div class="col-4 my-auto">
+                        <img src="../assets/images/1.jpg" class="img-fluid pro-img p-0">
+                    </div>
+
+                    <div class=" col-8 text-start ">
+                        <div class="d-inline-block  my-auto text-right">
+                            <a href="product-details.html" class="text-dark">
+                                <h6 class=" m-0 d-inline-block fw-bold ">
+                                    عطر الشعر جود جيرل
+                                    <span class="default-color fw-bold ms-2">
+                                        (2)
+                                    </span>
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="my-2">
+                            <span class="w-700 fontS-25 text-dark">
+                                99
+                            </span>
+                            <span>
+                                ريال
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="snippet my-3">
+                                    <input type="button" value="+" class="qty-plus">
+                                    <input type="number" value="1" class="qty" min="1" disabled="">
+                                    <input type="button" value="-" class="qty-minus">
+                                </div>
+                            </div>
+                            <div class="my-auto">
+                                <button class="btn delete p-0">
+                                    <span class="text-danger w-700 mt-auto">
+                                        <i class="far fa-trash-alt"></i>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <!--end cart side menu-->
-
+    <div class="cart-footer">
+        <h4>مجموع سلة التسوق
+            <span class="currency-value">
+                <span class="value">199</span>
+                <span class="currency">ج.م</span>
+            </span>
+        </h4>
+        <div class="cart-actions">
+            <a href="pages/cart.html"><button class=" button btn-block primary-btn">شراء الآن</button></a>
+            <button class=" button default-btn">استمر في التسوق</button>
+        </div>
+    </div>
+</div>
     <!--right side menu-->
     <div id="mySideright" class="right-side-nav">
         <div class="right-content">
