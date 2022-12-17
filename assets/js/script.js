@@ -5,6 +5,20 @@ $(document).ready(function () {
 
 
     });
+       // ========================== Back to Top =======================
+
+       $(window).on('scroll', function () {
+
+        if ($(this).scrollTop() > 150) { 
+            $("#scroll-top").show()
+        }
+        else{
+            $("#scroll-top").hide()
+        }
+    });
+    $("#scroll-top").on('click', function () {
+        $(window).scrollTop(0);
+    });
     // ============== ===================== 
     $('.qty-plus').click(function () {
         $(this).next().val(+$(this).next().val() + 1);
@@ -221,6 +235,33 @@ var swiper = new Swiper("#productsSlider", {
         },
     },
 });
+// ======================= categoriesSlider ================
+var swiper = new Swiper("#categoriesSlider4", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // autoplay: {
+    //     delay: 1500,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        },
+    },
+});
 // ======================== categoriesSlider2 ================
 var swiper = new Swiper("#categoriesSlider2", {
     slidesPerView: 2,
@@ -307,40 +348,14 @@ var swiper2 = new Swiper("#product-details-Slider2", {
         swiper: swiper,
     },
 });
-// ======================= categoriesSlider4 ================
-var swiper = new Swiper("#categoriesSlider4", {
-    slidesPerView: 2,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 10,
-        },
-    },
-});
+ 
 // ======================== testmonialSlider ====================
 var swiper = new Swiper("#testmonialSlider", {
     slidesPerView: 1,
     spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         640: {
@@ -352,7 +367,7 @@ var swiper = new Swiper("#testmonialSlider", {
             spaceBetween: 10,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 4,
             spaceBetween: 10,
         },
     },
