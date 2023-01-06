@@ -2029,6 +2029,30 @@ html {
 .bar-3 {
   background-color: transparent;
 }
+
+.pagination .page-link {
+  border: none;
+  margin: 0 10px;
+  border-radius: 0px !important;
+  color: #E41234;
+  border: 1px solid #E41234;
+}
+
+.pagination .page-item.active .page-link {
+  background: #E41234;
+  border-radius:  0px !important;
+  color: #fff;
+  border: 1px solid #E41234;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
+.pagination .page-link:hover {
+  background-color: #E41234;
+  color: #fff;
+}
 /* =============================================================================  */
 @media (max-width: 768px) {
   #productDetailsSlider img {
